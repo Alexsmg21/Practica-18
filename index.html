@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Practica18</title>
-    <LINK REL
+    <link rel="stylesheet" href="estilos/estilos1.css">
 </head>
 <body>
-<table BORDER="1">
+<form action="http://jorgesanchez.net/servicios/ver-datos.php" method="post"></form>
+<table border="1">
     <tr>
-        <th colspan="4">Formulario de Alta</th>
+        <th colspan="4">
+            <h1>Formulario de Alta</h1>
+        </th>
     </tr>
     <tr>
-        <td>Usuarios <br>
+        <td >Usuarios <br>
         Contraseña <br>
         Confirme la contraseña</td>
         <td> <input type="text" name="user"> <br>
         <input type="password" name="Pass"> <br>
         <input type="password" name="Confirm">
         </td>
-        <td rowspan="2"><img src="mundo.jpg" alt="imagen_mundo_jpg"></td>
+        <td rowspan="3"><img src="mundo.jpg" alt="imagen_mundo_jpg"></td>
     </tr>
     <tr>
         <td>email <br>
@@ -29,6 +32,86 @@
             <input type="text" placeholder="dd/mm/aaaa" name="Confirm">
         </td>
     </tr>
+    <tr>
+        <td colspan="2">
+            <fieldset>
+                 <legend>Intereses</legend>
+                   <table border="1">
+                       <tr>
+                           <td>
+                               <input type="checkbox" name="Actividades" value="deportes" id="deportes">
+                               <label for="deportes">Deportes</label>
+                           </td>
+
+                           <td>
+                               <input type="checkbox" name="Actividades" value="teatro" id="teatro">
+                               <label for="teatro">Teatro</label>
+                           </td>
+                           <td>
+                               <input type="checkbox" name="Actividades" value="cine" id="cine">
+                               <label for="cine">Cine</label>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <input type="checkbox" name="Actividades" value="musica" id="musica">
+                               <label for="musica">Musica</label>
+                           </td>
+                           <td>
+                               <input type="checkbox" name="Actividades" value="viajes" id="viajes">
+                               <label for="viajes">Viajes</label>
+                           </td>
+                           <td>
+                               <input type="checkbox" name="Actividades" value="otras" id="otras">
+                               <label for="otras">Otras</label>
+                           </td>
+                       </tr>
+                   </table>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" >
+               <p>Sexo:
+               <input type="radio" name="sexo" id="hombre" value="h">
+                  <label for="hombre">Hombre</label>
+               <input type="radio" name="sexo" id="mujer" value="m">
+                  <label for="mujer">Mujer</label>
+               </p>
+        </td>
+        <td>
+            <label for="MundoOcio.com">¿Como conociste a MundoOcio.com?</label>
+            <select name="MundoOcio.com" id="MundoOcio.com">
+                <optgroup label="Recomendacion">
+                    <option value="am">Amigos</option>
+                    <option value="fa">Familias</option>
+                    <option value="ot">Otros</option>
+                </optgroup>
+                <optgroup label="Medios">
+                    <option value="in">Internet</option>
+                    <option value="tv">TV</option>
+                    <option value="pr">Prensa</option>
+                    <option value="ra">Radio</option>
+                    <option value="ot">Otros</option>
+                </optgroup>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">Escribe ahora los comentarios que veas opurtunos <br>
+            <textarea name="texto" cols="100" rows="10"></textarea> <br>
+            <input type="submit" value="Enviar"> <br>
+        </td>
+    </tr>
 </table>
+<h1>Ir a otras zonas del MundoOcio.co</h1>
+<img src="mundo2.jpg" alt="mapas"
+usemap="mundo2.jpg" ismap="ismap">
+<map name="mapas" id="mapas">
+    <area shape="rect" coords="0,0,148,149" href="EO_index.html" alt="Europa Occdental">
+    <area shape="rect" coords="151,43,298,149" href="EN_index.html" alt="Europa del Norte">
+    <area shape="rect" coords="301,0,448,149" href="MO_index.html" alt="Mediterraneo Orinetal">
+    <area shape="rect" coords="451,0,599,148" href="MA_index.html" alt="Mar de Japon">
+</map>
 </body>
 </html>
